@@ -45,15 +45,10 @@ Build local Conda virtual environment and dependencies
  script structure include main.py which executes: load_all_datasets(), generate_sliced_data(), train_and_evaluate_model()
 
 A brief description of the steps: 
-
           1) load_all_datasets() - load the image chips and corresponding ground-truth data available. Image chips varied in size depending of the trial, temporal dimension is 102 which includes up to 17 time-points of 6-bands for each time points (CSM+ % MSI bands).
-          
           2) generate_sliced_data() -  takes two dictionaries and slices into RGB, RGBRENIR, CSMRGBRENIR type of features and the specific time-points for each of the target traits (Flowering time, culm length, biomass).
-          
           3) train_and_evaluate_model() - takes previous sliced data by type of features and time range and train and evaluate 2d and 3d CNN modeling, this includes saving of figures, metrics and scatterplots generation.
-          
           4) Grad-CAM generation() -  this takes examples images and ask grad-cam prediction of last layers of CNN to genearate heatmaps of most relevant regions used by the model for prediction. Refer to Grad-CAM technique here: https://arxiv.org/abs/1610.02391  
           
 
-  
 ```
