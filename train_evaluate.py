@@ -3,6 +3,7 @@ from sklearn.model_selection import train_test_split
 from tensorflow.keras import callbacks
 from model_definition import define_2d_model, define_3d_model
 from plotting import evaluate_and_plot
+import numpy as np
 
 # Constants
 EPOCHS = 20
@@ -11,7 +12,7 @@ MODE = 'min'
 METRIC_VAR = 'val_loss'
 PATIENCE = 40
 RANDOM_STATE = 456
-output_dir = 'output'
+output_dir = '../output'
 
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)

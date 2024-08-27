@@ -22,6 +22,7 @@ def apply_slices(x, slices):
     return stacked_slices, slice_info
 
 def generate_sliced_data(datasets, slices):
+    print('generating sliced data...')
     all_sliced_data = {}
     all_slice_infos = {}
     

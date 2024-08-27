@@ -28,6 +28,7 @@ def load_dataset(img_dir, gt_dir, filter_column, target_column, encoding='latin1
 
 def load_all_datasets(img_dir, gt_dir, dataset_configs):
     datasets = {}
+    print('loading data...')
     for config in dataset_configs:
         filter_column = config['filter_column']
         target_column = config['target_column']
