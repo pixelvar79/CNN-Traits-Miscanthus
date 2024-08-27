@@ -13,6 +13,7 @@ METRIC_VAR = 'val_loss'
 PATIENCE = 40
 RANDOM_STATE = 456
 output_dir = '../output'
+output_dir_plots = '../output/plots'
 
 if not os.path.exists(output_dir):
     os.makedirs(output_dir)
@@ -41,7 +42,7 @@ def train_and_evaluate_model(all_sliced_data, slice_infos, datasets, model_type=
                     
                     history = model.fit(x_train, y_train, epochs=EPOCHS, batch_size=SIZE, validation_data=(x_val, y_val), verbose=2, callbacks=[mc, es])
                     print(f'Model for {slice_key} slice {slice_info} trained with target {key}.')
-                    evaluate_and_plot(model, history, x_test, y_test, model_name, model_type)
+                    evaluate_and_plot(model, history, x_test, y_test, model_name, model_type, output_dir_plots)
                     
     elif model_type == '3d':
         for key, data in datasets.items():
