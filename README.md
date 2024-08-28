@@ -28,15 +28,15 @@ Build local Conda virtual environment and dependencies
   pip install -r requirements.txt
 ```
   
-  tifffile==2023.2.28
-  scikit-image==0.20.0
-  numpy==1.24.2
-  scikit-learn==1.0.1
-  tensorflow==2.10.0
-  pandas==1.5.3
-  seaborn
-  rasterio==1.3.6
-  rasterstats==0.18.0
+tifffile==2023.2.28
+rasterio==1.3.6
+tensorflow==2.10.0
+scikit-learn==1.0.1
+scikit-image==0.20.0
+numpy==1.24.2
+pandas==1.5.3
+seaborn
+
 
 2) Execute whole analysis including, loading, slicing, model training and evaluation, plotting, metrics, Grad-Cam
 ```
