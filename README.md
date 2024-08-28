@@ -21,9 +21,9 @@ conda --version
 
 Build local Conda virtual environment and dependencies
 ```
-  conda create --name lodging python=3.9  
+  conda create --name miscatraits python=3.9  
 
-  conda activate lodging
+  conda activate miscatraits
   
   pip install -r requirements.txt
 ```
