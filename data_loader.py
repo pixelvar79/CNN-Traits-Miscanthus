@@ -4,7 +4,7 @@ from pathlib import Path
 from image_processing import load_image
 
 def load_dataset(img_dir, gt_dir, filter_column, target_column, encoding='latin1'):
-    csv_file = Path(gt_dir) / 'MSAMSI_GT.csv'
+    csv_file = Path(gt_dir) / 'ground_truth_final.csv'
     df = pd.read_csv(csv_file, encoding=encoding)
     
     df = df.head(200)
