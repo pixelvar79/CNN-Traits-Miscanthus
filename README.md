@@ -1,6 +1,6 @@
 # CNN-Trait-Miscanthus
 
-This is the coding implementation for the research project presented in the foloowing peer-review publication:
+This is the coding implementation for the research project presented in the following peer-review publication:
 
 Sebastian Varela, Xuying Zheng, Joyce N. Njuguna, Erik J. Sacks, Dylan P. Allen, Jeremy Ruhter and Andrew D. B. Leakey (2022). *Deep Convolutional Neural Networks Exploit High-Spatial- and -Temporal-Resolution Aerial Imagery to Phenotype Key Traits in Miscanthus*. Remote Sensing. [![DOI](https://img.shields.io/badge/DOI-10.3390/rs14215333-blue)](https://doi.org/10.3390/rs14215333) [![PDF](https://img.shields.io/badge/PDF-Download-orange)](papers/remotesensing-14-05333.pdf)
 
