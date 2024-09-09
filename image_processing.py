@@ -7,7 +7,7 @@ from slices import get_slices_for_trait  # Import the function from slices.py
 
 def load_image(picture):
     img = imread(picture)
-    img = resize(img, (80, 80, 96))    
+    img = resize(img, (56, 56, 78))    
     return img
 
 def apply_slices(x, slices):
