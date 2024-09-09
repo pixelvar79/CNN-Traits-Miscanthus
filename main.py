@@ -43,7 +43,7 @@ gt_dir = '../data/GT'
 dataset_configs = [
     {'filter_column': 'data_available_f50', 'target_column': 'f50_head_date'},
     {'filter_column': 'data_available_length', 'target_column': 'culm_length'},
-    {'filter_column': 'data_available', 'target_column': 'biomass'}
+    {'filter_column': 'data_available_biomass', 'target_column': 'biomass'}
 ]
 
 def main():
